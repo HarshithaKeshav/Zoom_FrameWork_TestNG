@@ -1,6 +1,6 @@
-09:16:47.493 [TestNG-tests-2] INFO  testscripts.SignInPageTest - Launch the url
-09:16:48.207 [TestNG-tests-1] INFO  testscripts.BaseTest - Closing the browser
-09:16:49.384 [TestNG-tests-2] DEBUG testscripts.SignInPageTest - Enter the username
-09:16:49.596 [TestNG-tests-2] DEBUG testscripts.SignInPageTest - Enter the password
-09:16:50.878 [TestNG-tests-2] DEBUG testscripts.SignInPageTest - Click on the sign in button
-09:16:51.670 [TestNG-tests-2] DEBUG testscripts.SignInPageTest - Enter the username
+18:20:32.225 [TestNG-tests-1] INFO  testscripts.BaseTest - Closing the browser
+18:20:39.027 [TestNG-tests-2] INFO  testscripts.SignInPageTest - Launch the url
+18:20:40.049 [TestNG-tests-2] DEBUG testscripts.SignInPageTest - Enter the username
+18:20:40.237 [TestNG-tests-2] DEBUG testscripts.SignInPageTest - Enter the password
+18:20:41.572 [TestNG-tests-2] DEBUG testscripts.SignInPageTest - Click on the sign in button
+18:20:42.457 [TestNG-tests-2] DEBUG testscripts.SignInPageTest - Enter the username
