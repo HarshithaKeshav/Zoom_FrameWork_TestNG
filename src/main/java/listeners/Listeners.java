@@ -15,22 +15,24 @@ public class Listeners extends Base implements ITestListener{
 
     ExtentTest test;
     ExtentReports report = ExtentReport.getReportObject();
+    ThreadLocal<ExtentTest> extentTest = new ThreadLocal<>();
 
     public void onTestStart(ITestResult result) {
         // TODO Auto-generated method stub
         test= report.createTest(result.getMethod().getMethodName());
-
+        extentTest.set(test);
     }
 
     @Override
     public void onTestSuccess(ITestResult arg0) {
         // TODO Auto-generated method stub
-        test.log(Status.PASS, "Test Passed");
+        extentTest.get().log(Status.PASS, "Test Passed");
 
     }
 
     @Override
     public void onTestFailure(ITestResult result){
+       extentTest.get().fail(result.getThrowable());
         WebDriver driver = null;
         String methodName = result.getMethod().getMethodName();
         try {
@@ -41,16 +43,15 @@ public class Listeners extends Base implements ITestListener{
 
 
         try {
-            getScreenShot(methodName, driver);
+            extentTest.get().addScreenCaptureFromPath(getScreenShot(methodName,driver), result.getMethod().getMethodName());
+
         } catch (IOException e) {
             e.printStackTrace();
         }
-
-        test.fail(result.getThrowable());
     }
 
     @Override
-    public void onStart(ITestContext arg0) {
+    public void onFinish(ITestContext arg0) {
         // TODO Auto-generated method stub
 
         report.flush();
