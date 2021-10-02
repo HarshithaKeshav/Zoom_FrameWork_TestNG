@@ -7,7 +7,7 @@ public class ExtentReport {
     static ExtentReports report;
 
     public static ExtentReports getReportObject(){
-        String path = System.getProperty("/Users/harshithakeshav/IdeaProjects/Zoom_FrameWork_TestNG/src/main/java/reports")+"/index.html";
+        String path = System.getProperty("use.dir")+"\\reports\\index.html";
         ExtentSparkReporter reporter = new ExtentSparkReporter(path);
         reporter.config().setReportName("Web Automation Results");
         reporter.config().setDocumentTitle("Test Results");

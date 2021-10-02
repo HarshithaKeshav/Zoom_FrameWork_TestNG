@@ -1,6 +1,6 @@
-21:09:27.243 [main] DEBUG testscripts.SignInPageTest - Enter the password
-21:09:28.573 [main] DEBUG testscripts.SignInPageTest - Click on the sign in button
-21:09:29.293 [main] DEBUG testscripts.SignInPageTest - Enter the username
-21:09:29.584 [main] DEBUG testscripts.SignInPageTest - Enter the password
-21:09:36.472 [AsyncHttpClient-1-7] TRACE io.netty.handler.codec.http.websocketx.WebSocket08FrameEncoder - Encoding WebSocket Frame opCode=8 length=26
-21:09:36.584 [main] INFO  testscripts.SignInPageTest - Quit the browser
+22:02:38.457 [main] DEBUG testscripts.SignInPageTest - Enter the password
+22:02:39.738 [main] DEBUG testscripts.SignInPageTest - Click on the sign in button
+22:02:40.575 [main] DEBUG testscripts.SignInPageTest - Enter the username
+22:02:40.689 [main] DEBUG testscripts.SignInPageTest - Enter the password
+22:02:47.770 [AsyncHttpClient-1-7] TRACE io.netty.handler.codec.http.websocketx.WebSocket08FrameEncoder - Encoding WebSocket Frame opCode=8 length=26
+22:02:47.937 [main] INFO  testscripts.SignInPageTest - Quit the browser
