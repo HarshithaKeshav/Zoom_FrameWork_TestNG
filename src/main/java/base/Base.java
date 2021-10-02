@@ -46,7 +46,7 @@ public class Base {
     public String getScreenShot(String testCaseName, WebDriver driver) throws IOException {
       TakesScreenshot screenshot = (TakesScreenshot) driver;
         File sourceFile = screenshot.getScreenshotAs(OutputType.FILE);
-        String destinationFile = System.getProperty("user.dir")+"/src/main/java/reports"+testCaseName+".png";
+        String destinationFile = System.getProperty("user.dir")+"/src/main/java/reports/"+testCaseName+".png";
         FileUtils.copyFile(sourceFile, new File(destinationFile));
         return destinationFile;
     }

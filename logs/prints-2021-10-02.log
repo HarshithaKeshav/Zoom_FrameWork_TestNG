@@ -1,0 +1,6 @@
+08:04:53.609 [main] DEBUG testscripts.SignInPageTest - Enter the password
+08:04:54.865 [main] DEBUG testscripts.SignInPageTest - Click on the sign in button
+08:04:55.652 [main] DEBUG testscripts.SignInPageTest - Enter the username
+08:04:55.790 [main] DEBUG testscripts.SignInPageTest - Enter the password
+08:05:02.500 [AsyncHttpClient-1-7] TRACE io.netty.handler.codec.http.websocketx.WebSocket08FrameEncoder - Encoding WebSocket Frame opCode=8 length=26
+08:05:02.616 [main] INFO  testscripts.SignInPageTest - Quit the browser
