@@ -23,7 +23,7 @@ public class Base {
         FileInputStream fis = new FileInputStream("/Users/harshithakeshav/IdeaProjects/Zoom_FrameWork_TestNG/src/main/resources/data.properties");
         properties.load(fis);
 
-        //To send parameters through maven command. mvn test -Dbrowser=chrome
+        //To send parameters through maven command.
         String browserName = System.getProperty("browser");
 
         //To send parameters through data.properties.
@@ -34,7 +34,7 @@ public class Base {
              driver = new ChromeDriver();
         }
         else if (browserName.equalsIgnoreCase("firefox")){
-            System.setProperty("webdriver.firefox.driver", "/Users/harshithakeshav/Downloads/geckodriver");
+            System.setProperty("webdriver.gecko.driver", "/Users/harshithakeshav/Downloads/geckodriver");
              driver = new FirefoxDriver();
         }
         else {
