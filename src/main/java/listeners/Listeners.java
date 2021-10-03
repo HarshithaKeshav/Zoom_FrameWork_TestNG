@@ -15,6 +15,8 @@ public class Listeners extends Base implements ITestListener{
 
     ExtentTest test;
     ExtentReports report = ExtentReport.getReportObject();
+
+    //To make project thread safe
     ThreadLocal<ExtentTest> extentTest = new ThreadLocal<>();
 
     public void onTestStart(ITestResult result) {

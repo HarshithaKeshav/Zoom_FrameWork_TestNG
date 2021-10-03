@@ -22,7 +22,12 @@ public class Base {
          properties = new Properties();
         FileInputStream fis = new FileInputStream("/Users/harshithakeshav/IdeaProjects/Zoom_FrameWork_TestNG/src/main/resources/data.properties");
         properties.load(fis);
-        String browserName = properties.getProperty("browser");
+
+        //To send parameters through maven command. mvn test -Dbrowser=chrome
+        String browserName = System.getProperty("browser");
+
+        //To send parameters through data.properties.
+        //String browserName = properties.getProperty("browser");
 
         if (browserName.equalsIgnoreCase("chrome")){
             System.setProperty("webdriver.chrome.driver", "/Users/harshithakeshav/Downloads/chromedriver");
