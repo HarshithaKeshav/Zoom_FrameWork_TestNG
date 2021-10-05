@@ -8,13 +8,13 @@ import org.openqa.selenium.support.PageFactory;
 public class SignInPage {
     public WebDriver driver;
 
-    @FindBy(id = "email")
+    private @FindBy(id = "email")
     WebElement email_address;
 
-    @FindBy(id = "password")
+    private @FindBy(id = "password")
     WebElement enter_password;
 
-    @FindBy(xpath = "//div[@class='signin']/button")
+    private @FindBy(xpath = "//div[@class='signin']/button")
     WebElement sign_in;
 
     public SignInPage(WebDriver driver){
@@ -33,6 +33,7 @@ public class SignInPage {
     }
 
     public void clickSignIn(){
+
         sign_in.click();
     }
 

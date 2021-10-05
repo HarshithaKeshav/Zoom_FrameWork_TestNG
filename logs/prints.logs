@@ -1,2 +1,5 @@
-21:58:54.117 [AsyncHttpClient-1-5] DEBUG io.netty.buffer.PoolThreadCache - Freed 2 thread-local buffer(s) from thread: AsyncHttpClient-1-5
-21:58:54.128 [AsyncHttpClient-1-4] DEBUG io.netty.buffer.PoolThreadCache - Freed 2 thread-local buffer(s) from thread: AsyncHttpClient-1-4
+23:31:34.498 [TestNG-tests-2] DEBUG testscripts.SignInPageTest - Enter the password
+23:31:41.102 [AsyncHttpClient-1-7] TRACE io.netty.handler.codec.http.websocketx.WebSocket08FrameEncoder - Encoding WebSocket Frame opCode=8 length=26
+23:31:41.280 [TestNG-tests-2] INFO  testscripts.SignInPageTest - Quit the browser
+23:31:41.381 [AsyncHttpClient-1-6] DEBUG io.netty.buffer.PoolThreadCache - Freed 3 thread-local buffer(s) from thread: AsyncHttpClient-1-6
+23:31:41.381 [AsyncHttpClient-1-5] DEBUG io.netty.buffer.PoolThreadCache - Freed 2 thread-local buffer(s) from thread: AsyncHttpClient-1-5

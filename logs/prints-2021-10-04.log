@@ -1,0 +1,6 @@
+23:31:29.318 [TestNG-tests-1] INFO  testscripts.BaseTest - Closing the browser
+23:31:30.089 [TestNG-tests-2] INFO  testscripts.SignInPageTest - Launch the url
+23:31:31.297 [TestNG-tests-2] DEBUG testscripts.SignInPageTest - Enter the username
+23:31:31.564 [TestNG-tests-2] DEBUG testscripts.SignInPageTest - Enter the password
+23:31:33.151 [TestNG-tests-2] DEBUG testscripts.SignInPageTest - Click on the sign in button
+23:31:34.377 [TestNG-tests-2] DEBUG testscripts.SignInPageTest - Enter the username

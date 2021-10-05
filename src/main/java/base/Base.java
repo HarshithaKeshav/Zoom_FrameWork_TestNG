@@ -17,24 +17,26 @@ public class Base {
 
     public WebDriver driver;
     public Properties properties;
+    String ProjDir = System.getProperty("user.dir");
 
     public WebDriver initializeDriver() throws IOException {
          properties = new Properties();
-        FileInputStream fis = new FileInputStream("/Users/harshithakeshav/IdeaProjects/Zoom_FrameWork_TestNG/src/main/resources/data.properties");
+
+        FileInputStream fis = new FileInputStream(ProjDir+"/src/main/resources/data.properties");
         properties.load(fis);
 
-        //To send parameters through maven command.
-        String browserName = System.getProperty("browser");
+        //To send parameters through maven command. mvn test -Dbrowser=chrome
+        //String browserName = System.getProperty("browser");
 
         //To send parameters through data.properties.
-        //String browserName = properties.getProperty("browser");
+        String browserName = properties.getProperty("browser");
 
         if (browserName.equalsIgnoreCase("chrome")){
-            System.setProperty("webdriver.chrome.driver", "/Users/harshithakeshav/Downloads/chromedriver");
+            System.setProperty("webdriver.chrome.driver", ProjDir+"/src/main/resources/drivers/chromedriver");
              driver = new ChromeDriver();
         }
         else if (browserName.equalsIgnoreCase("firefox")){
-            System.setProperty("webdriver.gecko.driver", "/Users/harshithakeshav/Downloads/geckodriver");
+            System.setProperty("webdriver.gecko.driver", ProjDir+"/src/main/resources/drivers/geckodriver");
              driver = new FirefoxDriver();
         }
         else {
@@ -51,7 +53,7 @@ public class Base {
     public String getScreenShot(String testCaseName, WebDriver driver) throws IOException {
       TakesScreenshot screenshot = (TakesScreenshot) driver;
         File sourceFile = screenshot.getScreenshotAs(OutputType.FILE);
-        String destinationFile = System.getProperty("user.dir")+"/src/main/java/reports/"+testCaseName+".png";
+        String destinationFile = ProjDir+"/src/main/java/reports/"+testCaseName+".png";
         FileUtils.copyFile(sourceFile, new File(destinationFile));
         return destinationFile;
     }
