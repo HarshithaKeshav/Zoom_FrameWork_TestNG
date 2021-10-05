@@ -2,32 +2,32 @@
 <testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-10-02T21:43:53 EDT" name="All Test Suite" finished-at="2021-10-02T21:44:35 EDT" duration-ms="42481">
+  <suite started-at="2021-10-05T08:59:14 EDT" name="All Test Suite" finished-at="2021-10-05T08:59:42 EDT" duration-ms="28471">
     <groups>
     </groups>
-    <test started-at="2021-10-02T21:43:53 EDT" name="Base Test" finished-at="2021-10-02T21:44:23 EDT" duration-ms="30187">
+    <test started-at="2021-10-05T08:59:14 EDT" name="Base Test" finished-at="2021-10-05T08:59:32 EDT" duration-ms="18184">
       <class name="testscripts.BaseTest">
-        <test-method is-config="true" signature="signInPageNavigation()[pri:0, instance:testscripts.BaseTest@35038141]" started-at="2021-10-02T21:43:53 EDT" name="signInPageNavigation" finished-at="2021-10-02T21:44:00 EDT" duration-ms="7501" status="PASS">
+        <test-method is-config="true" signature="signInPageNavigation()[pri:0, instance:testscripts.BaseTest@35038141]" started-at="2021-10-05T08:59:14 EDT" name="signInPageNavigation" finished-at="2021-10-05T08:59:17 EDT" duration-ms="3492" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- signInPageNavigation -->
-        <test-method signature="test()[pri:0, instance:testscripts.BaseTest@35038141]" started-at="2021-10-02T21:44:00 EDT" name="test" finished-at="2021-10-02T21:44:22 EDT" duration-ms="22141" status="PASS">
+        <test-method signature="test()[pri:0, instance:testscripts.BaseTest@35038141]" started-at="2021-10-05T08:59:17 EDT" name="test" finished-at="2021-10-05T08:59:32 EDT" duration-ms="14391" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testscripts.BaseTest@35038141]" started-at="2021-10-02T21:44:22 EDT" name="tearDown" finished-at="2021-10-02T21:44:23 EDT" duration-ms="393" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testscripts.BaseTest@35038141]" started-at="2021-10-05T08:59:32 EDT" name="tearDown" finished-at="2021-10-05T08:59:32 EDT" duration-ms="226" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- testscripts.BaseTest -->
     </test> <!-- Base Test -->
-    <test started-at="2021-10-02T21:43:53 EDT" name=" Sign In Page Test" finished-at="2021-10-02T21:44:35 EDT" duration-ms="42481">
+    <test started-at="2021-10-05T08:59:14 EDT" name=" Sign In Page Test" finished-at="2021-10-05T08:59:42 EDT" duration-ms="28471">
       <class name="testscripts.SignInPageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:testscripts.SignInPageTest@70e0accd]" started-at="2021-10-02T21:43:53 EDT" name="setUp" finished-at="2021-10-02T21:44:21 EDT" duration-ms="28195" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testscripts.SignInPageTest@70e0accd]" started-at="2021-10-05T08:59:14 EDT" name="setUp" finished-at="2021-10-05T08:59:32 EDT" duration-ms="17978" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="signInTest(java.lang.String,java.lang.String)[pri:0, instance:testscripts.SignInPageTest@70e0accd]" started-at="2021-10-02T21:44:21 EDT" name="signInTest" data-provider="getData" finished-at="2021-10-02T21:44:27 EDT" duration-ms="6068" status="PASS">
+        <test-method signature="signInTest(java.lang.String,java.lang.String)[pri:0, instance:testscripts.SignInPageTest@70e0accd]" started-at="2021-10-05T08:59:32 EDT" name="signInTest" data-provider="getData" finished-at="2021-10-05T08:59:35 EDT" duration-ms="2977" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -43,7 +43,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- signInTest -->
-        <test-method signature="signInTest(java.lang.String,java.lang.String)[pri:0, instance:testscripts.SignInPageTest@70e0accd]" started-at="2021-10-02T21:44:27 EDT" name="signInTest" data-provider="getData" finished-at="2021-10-02T21:44:29 EDT" duration-ms="1772" status="FAIL">
+        <test-method signature="signInTest(java.lang.String,java.lang.String)[pri:0, instance:testscripts.SignInPageTest@70e0accd]" started-at="2021-10-05T08:59:35 EDT" name="signInTest" data-provider="getData" finished-at="2021-10-05T08:59:37 EDT" duration-ms="2075" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -58,26 +58,26 @@
           </params>
           <exception class="org.openqa.selenium.ElementClickInterceptedException">
             <message>
-              <![CDATA[element click intercepted: Element <button type="button" class="btn btn-primary signin user disabled" disabled="disabled">...</button> is not clickable at point (975, 455). Other element would receive the click: <form id="login-form" action="javascript:;" autocomplete="off" class="" novalidate="novalidate">...</form>
-  (Session info: chrome=94.0.4606.61)
+              <![CDATA[element click intercepted: Element <button type="button" class="btn btn-primary signin user disabled" disabled="disabled">...</button> is not clickable at point (600, 455). Other element would receive the click: <form id="login-form" action="javascript:;" autocomplete="off" class="" novalidate="novalidate">...</form>
+  (Session info: headless chrome=94.0.4606.71)
 Build info: version: '4.0.0-rc-1', revision: 'bc5511cbda'
 System info: host: 'Harshithas-MacBook-Pro.local', ip: '2607:fea8:5aa3:1100:0:0:0:698d%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '11.0.11'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [af9cf0c73f4b147f792c28773eea9360, clickElement {id=237341b7-941a-4fb6-b76e-8b1282f9cb62}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.61, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: /var/folders/4k/8dh31nz10j5...}, goog:chromeOptions: {debuggerAddress: localhost:49415}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:49415/devtoo..., se:cdpVersion: 94.0.4606.61, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on MAC (af9cf0c73f4b147f792c28773eea9360)] -> xpath: //div[@class='signin']/button]
-Session ID: af9cf0c73f4b147f792c28773eea9360]]>
+Command: [19fc1e95462053059840d3aaf8e952cd, clickElement {id=8aef13a1-e3dc-4ef0-8bb9-ef22318770a4}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.71, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: /var/folders/4k/8dh31nz10j5...}, goog:chromeOptions: {debuggerAddress: localhost:57932}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:57932/devtoo..., se:cdpVersion: 94.0.4606.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on MAC (19fc1e95462053059840d3aaf8e952cd)] -> xpath: //div[@class='signin']/button]
+Session ID: 19fc1e95462053059840d3aaf8e952cd]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button type="button" class="btn btn-primary signin user disabled" disabled="disabled">...</button> is not clickable at point (975, 455). Other element would receive the click: <form id="login-form" action="javascript:;" autocomplete="off" class="" novalidate="novalidate">...</form>
-  (Session info: chrome=94.0.4606.61)
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button type="button" class="btn btn-primary signin user disabled" disabled="disabled">...</button> is not clickable at point (600, 455). Other element would receive the click: <form id="login-form" action="javascript:;" autocomplete="off" class="" novalidate="novalidate">...</form>
+  (Session info: headless chrome=94.0.4606.71)
 Build info: version: '4.0.0-rc-1', revision: 'bc5511cbda'
 System info: host: 'Harshithas-MacBook-Pro.local', ip: '2607:fea8:5aa3:1100:0:0:0:698d%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '11.0.11'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [af9cf0c73f4b147f792c28773eea9360, clickElement {id=237341b7-941a-4fb6-b76e-8b1282f9cb62}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.61, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: /var/folders/4k/8dh31nz10j5...}, goog:chromeOptions: {debuggerAddress: localhost:49415}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:49415/devtoo..., se:cdpVersion: 94.0.4606.61, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on MAC (af9cf0c73f4b147f792c28773eea9360)] -> xpath: //div[@class='signin']/button]
-Session ID: af9cf0c73f4b147f792c28773eea9360
+Command: [19fc1e95462053059840d3aaf8e952cd, clickElement {id=8aef13a1-e3dc-4ef0-8bb9-ef22318770a4}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.71, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: /var/folders/4k/8dh31nz10j5...}, goog:chromeOptions: {debuggerAddress: localhost:57932}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:57932/devtoo..., se:cdpVersion: 94.0.4606.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on MAC (19fc1e95462053059840d3aaf8e952cd)] -> xpath: //div[@class='signin']/button]
+Session ID: 19fc1e95462053059840d3aaf8e952cd
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -97,7 +97,7 @@ at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Delegating
 at java.base/java.lang.reflect.Method.invoke(Method.java:566)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
 at com.sun.proxy.$Proxy30.click(Unknown Source)
-at pages.SignInPage.clickSignIn(SignInPage.java:36)
+at pages.SignInPage.clickSignIn(SignInPage.java:37)
 at testscripts.SignInPageTest.signInTest(SignInPageTest.java:33)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -128,7 +128,7 @@ at java.base/java.lang.Thread.run(Thread.java:834)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- signInTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testscripts.SignInPageTest@70e0accd]" started-at="2021-10-02T21:44:30 EDT" name="tearDown" finished-at="2021-10-02T21:44:35 EDT" duration-ms="5261" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testscripts.SignInPageTest@70e0accd]" started-at="2021-10-05T08:59:37 EDT" name="tearDown" finished-at="2021-10-05T08:59:42 EDT" duration-ms="5141" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

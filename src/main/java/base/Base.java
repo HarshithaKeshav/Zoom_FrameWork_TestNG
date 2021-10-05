@@ -5,6 +5,7 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 import java.io.File;
@@ -31,11 +32,17 @@ public class Base {
         //To send parameters through data.properties.
         String browserName = properties.getProperty("browser");
 
-        if (browserName.equalsIgnoreCase("chrome")){
+        if (browserName.contains("chrome")){
             System.setProperty("webdriver.chrome.driver", ProjDir+"/src/main/resources/drivers/chromedriver");
-             driver = new ChromeDriver();
+            ChromeOptions options = new ChromeOptions();
+
+            if (browserName.contains("headless")){
+                options.addArguments("--headless");
+            }
+
+             driver = new ChromeDriver(options);
         }
-        else if (browserName.equalsIgnoreCase("firefox")){
+        else if (browserName.contains("firefox")){
             System.setProperty("webdriver.gecko.driver", ProjDir+"/src/main/resources/drivers/geckodriver");
              driver = new FirefoxDriver();
         }

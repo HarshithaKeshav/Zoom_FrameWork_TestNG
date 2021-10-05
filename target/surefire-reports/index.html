@@ -150,15 +150,15 @@
                   </a> <!-- signInTest(xyz@gmail.com, xy123) -->
                   <span class="method-name">signInTest</span>
                   <span class="parameters">(xyz@gmail.com, xy123)</span>
-                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button type=&quot;button&quot; class=&quot;btn btn-primary signin user disabled&quot; disabled=&quot;disabled&quot;&gt;...&lt;/button&gt; is not clickable at point (975, 455). Other element would receive the click: &lt;form id=&quot;login-form&quot; action=&quot;javascript:;&quot; autocomplete=&quot;off&quot; class=&quot;&quot; novalidate=&quot;novalidate&quot;&gt;...&lt;/form&gt;
-  (Session info: chrome=94.0.4606.61)
+                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button type=&quot;button&quot; class=&quot;btn btn-primary signin user disabled&quot; disabled=&quot;disabled&quot;&gt;...&lt;/button&gt; is not clickable at point (600, 455). Other element would receive the click: &lt;form id=&quot;login-form&quot; action=&quot;javascript:;&quot; autocomplete=&quot;off&quot; class=&quot;&quot; novalidate=&quot;novalidate&quot;&gt;...&lt;/form&gt;
+  (Session info: headless chrome=94.0.4606.71)
 Build info: version: &apos;4.0.0-rc-1&apos;, revision: &apos;bc5511cbda&apos;
 System info: host: &apos;Harshithas-MacBook-Pro.local&apos;, ip: &apos;2607:fea8:5aa3:1100:0:0:0:698d%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.16&apos;, java.version: &apos;11.0.11&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [af9cf0c73f4b147f792c28773eea9360, clickElement {id=237341b7-941a-4fb6-b76e-8b1282f9cb62}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.61, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: /var/folders/4k/8dh31nz10j5...}, goog:chromeOptions: {debuggerAddress: localhost:49415}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:49415/devtoo..., se:cdpVersion: 94.0.4606.61, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on MAC (af9cf0c73f4b147f792c28773eea9360)] -&gt; xpath: //div[@class=&apos;signin&apos;]/button]
-Session ID: af9cf0c73f4b147f792c28773eea9360
+Command: [19fc1e95462053059840d3aaf8e952cd, clickElement {id=8aef13a1-e3dc-4ef0-8bb9-ef22318770a4}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.71, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: /var/folders/4k/8dh31nz10j5...}, goog:chromeOptions: {debuggerAddress: localhost:57932}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:57932/devtoo..., se:cdpVersion: 94.0.4606.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on MAC (19fc1e95462053059840d3aaf8e952cd)] -&gt; xpath: //div[@class=&apos;signin&apos;]/button]
+Session ID: 19fc1e95462053059840d3aaf8e952cd
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
@@ -170,7 +170,7 @@ Session ID: af9cf0c73f4b147f792c28773eea9360
 	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
 	at com.sun.proxy.$Proxy30.click(Unknown Source)
-	at pages.SignInPage.clickSignIn(SignInPage.java:36)
+	at pages.SignInPage.clickSignIn(SignInPage.java:37)
 	at testscripts.SignInPageTest.signInTest(SignInPageTest.java:33)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
@@ -289,20 +289,20 @@ data.addRows(3);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'test')
 data.setCell(0, 2, 'testscripts.BaseTest')
-data.setCell(0, 3, 22141);
+data.setCell(0, 3, 14391);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'signInTest')
 data.setCell(1, 2, 'testscripts.SignInPageTest')
-data.setCell(1, 3, 6068);
+data.setCell(1, 3, 2977);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'signInTest')
 data.setCell(2, 2, 'testscripts.SignInPageTest')
-data.setCell(2, 3, 1772);
+data.setCell(2, 3, 2075);
 window.suiteTableData['All_Test_Suite']= { tableData: data, tableDiv: 'times-div-All_Test_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 42 seconds</span>
+              <span class="suite-total-time">Total running time: 28 seconds</span>
               <div id="times-div-All_Test_Suite">
               </div> <!-- times-div-All_Test_Suite -->
             </div> <!-- times-div -->
@@ -345,34 +345,28 @@ return data;
               <div class="chronological-class-name">testscripts.BaseTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">test</span>
-                <span class="method-start">7575 ms</span>
+                <span class="method-start">3519 ms</span>
               </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">testscripts.SignInPageTest</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">signInTest(abc@gmail.com, abc123)</span>
-                <span class="method-start">28234 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">testscripts.BaseTest</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">29757 ms</span>
+                <span class="method-start">17935 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testscripts.SignInPageTest</div> <!-- chronological-class-name -->
               <div class="test-method">
+                <span class="method-name">signInTest(abc@gmail.com, abc123)</span>
+                <span class="method-start">17984 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">signInTest(xyz@gmail.com, xy123)</span>
-                <span class="method-start">34308 ms</span>
+                <span class="method-start">20964 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">37183 ms</span>
+                <span class="method-start">23307 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
